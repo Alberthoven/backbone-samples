@@ -1,0 +1,31 @@
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<script src="lib/jquery.js"></script>
+		<script src="lib/underscore.js"></script>
+		<script src="lib/backbone.js"></script>
+		<script src="lib/backbone.localStorage.js"></script>
+		<!--<script src="lib/Backbone.Marionette.js"></script>-->
+
+		<!-- El template debe estar por encima de la vista -->
+		<script type="text/template" id="consultant-template">
+			<%-surname%>, <%-name%>
+		</script>
+
+		<!-- Modelos y colecciones -->
+		<script src="samples/models/Consultant.js"></script>
+		<script src="samples/models/ConsultantModel.js"></script>
+		<script src="samples/collections/ConsultantCollection.js"></script>
+
+		<!-- Vistas -->
+		<script src="samples/views/ConsultantView.js"></script>
+		<script src="samples/views/ConsultantsView.js"></script>
+
+		<!-- Enrutadores -->
+		<script src="samples/routers/ConsultantRouter.js"></script>
+
+		<script src="samples/routers/router.js"></script>
+	</body>
+</html>
